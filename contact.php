@@ -10,7 +10,8 @@
 $toEmail = "contact@timcasonjr.com";  									// Who is the email going to
 $toName = "Tim Cason";  												// Who is the email going to
 
-require_once('../class.phpmailer.php');
+require_once('../phpMailer/class.phpmailer.php');
+require_once('../phpMailer/class.smtp.php');
 
 // Does data exist, if(TRUE) -> return sanitized data
 $data['name'] = (!empty($_POST['name'] )) ? htmlspecialchars($_POST['name']) : false;
