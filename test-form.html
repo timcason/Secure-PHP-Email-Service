@@ -1,0 +1,19 @@
+<html>
+<body>
+<form role="form" method="POST" action="contact.php">
+  <div class="contact-form">
+    <input type="text" name="name" class="form-control user-error" placeholder="Name" required="" aria-invalid="true">
+    <input type="email" name="mail" class="form-control" placeholder="Email Address" id="email" required="">
+    <select class="form-control user-success" name="subject" required="">
+      <option value="General" selected="selected">Select a Subject</option>
+      <option value="Technical Support">Technical Support</option>
+      <option value="Entries/Editorial">Entries/Editorial</option>
+      <option value="Inappropriate Content">Inappropriate Content</option>
+      <option value="Other">Other</option>
+    </select>
+    <textarea class="form-control" rows="8" name="message" placeholder="Your message..." required=""></textarea>
+  </div>
+  <button type="submit" class="button-home-details">Submit</button>
+</form>
+</body>
+</html>
